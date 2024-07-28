@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="p.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, user-scalable=no"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+      /*menu button onclick function*/ $(document).ready(function () {
+        $(".menu h4").click(function () {
+          $("nav ul").toggleClass("active");
+        });
+      });
+    </script>
+    <title>AstroHelp</title>
+</head>
+<body>
+    <div id="f">
+        <div class="responsive-bar">
+         
+
+          <div class="logo">
+            <img  src="image.png" alt="logo" />
+            <h1 style="position: relative; top: -30px; color: darkgoldenrod;font-size: x-large;">AstroHelp</h1>
+
+          </div>
+          <div class="menu">
+            <h4>Menu</h4>
+          </div>
+        </div>
+        <nav>
+          <div class="logo">
+            <img src="image.png" alt="logo" />
+            <h1 style="position: relative; top: -30px; color: darkgoldenrod;font-size: x-large;">AstroHelp</h1>
+          </div>
+          <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="aboutus.htm">About us</a></li>
+            <li><a href="contact.htm">Contact Us</a></li>
+            <li><a href="cust.htm">Customer Feedback</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div id="ku">
+    </div>
+</body>
+</html>

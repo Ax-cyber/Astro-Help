@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="p.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, user-scalable=no"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+      /*menu button onclick function*/ $(document).ready(function () {
+        $(".menu h4").click(function () {
+          $("nav ul").toggleClass("active");
+        });
+      });
+    </script>
+    <title>AstroHelp</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+   
+    <div id="f">
+        <div class="responsive-bar">
+         
+
+          <div class="logo">
+            <img  src="image.png" alt="logo" />
+            <h1 style="position: relative; top: -30px; color: darkgoldenrod;font-size: x-large;">AstroHelp</h1>
+
+          </div>
+          <div class="menu">
+            <h4>Menu</h4>
+          </div>
+        </div>
+        <nav>
+          <div class="logo">
+            <img src="image.png" alt="logo" />
+            <h1 style="position: relative; top: -30px; color: darkgoldenrod;font-size: x-large;">AstroHelp</h1>
+          </div>
+          <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="aboutus.htm">About us</a></li>
+            <li><a href="contact.htm">Contact Us</a></li>
+            <li><a href="cust.htm">Customer Feedback</a></li>
+
+          </ul>
+        </nav>
+      </div>   
+      <div id="ku">
+         </div>
+    <div id="o">
+     
+      <div class="card1">
+        <img src="ll.jpeg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Dr. Lalit Mohan Joshi </b></h4>
+          <p> Senior Vedic Astrologer <br>and 
+            Spiritual Healer <br>(40+ years of Experience)</p>
+        </div>
+      </div><br>
+      <div class="card1">
+        <img src="dd.jpeg" alt="Avatar" style="width:100%">
+        <div class="container">
+          <h4><b>Ms. Diptii Sallwan </b></h4>
+          <p> Vedic Astrologer <br>and Multi Modalities Expert<br>(20+ years of Experience) </p>
+        </div>
+      </div>  
+    </div>
+    <div><h3 style="color: aliceblue;">Astrologer Diptii Sallwan  has been associated with Vedic astrology, Tarot Reading ,Numerology ,crystal healing and other occult modalities for quite a while. Her keen interest in occult sciences has always fascinated her to explore its various realms, even more and more with a benevolent and humanitarian attitude. She always wants to be there for her clients in times of their need so as to meet their requirements and provide them solace.She has been doing all this for almost 2 decades now. Her expertise helps her to address specific issues with simple yet effective solutions,making these divine sciences accessible and beneficial to her clients.Her approach is compassionate and client -focused,ensuring that her guidance is tailored to meet individual needs. Whether you are seeking answers to a specific questions or looking for overall life guidance ,astrologer Diptii Salwan offers a comprehensive and empathetic approach, blending traditional wisdom with practical advice.</h3></div>
+    <div><h3 style="color: aliceblue;">Dr.Lalit Mohan Joshi ji has more than 40 years of experience in this field. He has expertise in Vedic Astrology. He blends traditional techniques with modern insights to provide personalized guidance. His expertise lies in deciphering celestial influences to illuminate paths of self-discovery, relationship dynamics, and career trajectories. Through compassionate listening and intuitive understanding, he offers clarity and empowerment to navigate life's challenges. Whether seeking insight into love, career, or personal growth, He's dedicated to helping individuals embrace their cosmic blueprint and manifest their highest potential.</h3></div>
+</body>
+</html>

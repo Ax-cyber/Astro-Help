@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="p.css" />
+<!-- <link rel="stylesheet" href="cust.css"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta
+      name="viewport"
+      content="width=device-width,initial-scale=1, user-scalable=no"
+    />
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script type="text/javascript">
+      $(window).on("scroll", function () {
+        if ($(window).scrollTop()) {
+          $("nav").addClass("black");
+        } else {
+          $("nav").removeClass("black");
+        }
+      });
+      /*menu button onclick function*/ $(document).ready(function () {
+        $(".menu h4").click(function () {
+          $("nav ul").toggleClass("active");
+        });
+      });
+    </script>
+    <title>Document</title>
+</head>
+<body>
+    <div id="f">
+        <div class="responsive-bar">
+         
+
+          <div class="logo">
+            <img  src="image.png" alt="logo" />
+            <h1 style="position: relative; top: -30px; color: darkgoldenrod;font-size: x-large;">AstroHelp</h1>
+
+          </div>
+          <div class="menu">
+            <h4>Menu</h4>
+          </div>
+        </div>
+        <nav>
+          <div class="logo">
+            <img src="image.png" alt="logo" />
+            <h1 style="position: relative; top: -30px; color: darkgoldenrod;font-size: x-large;">AstroHelp</h1>
+          </div>
+          <ul>
+            <li><a href="index.htm">Home</a></li>
+            <li><a href="aboutus.htm">About us</a></li>
+           
+            <li><a href="contact.htm">Contact Us</a></li>
+            <li><a href="cust.htm">Customer Feedback</a></li>
+          </ul>
+        </nav>
+      </div>
+     <div>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+            <div class="autoplay-progress">
+              <svg viewBox="0 0 48 48">
+                <circle cx="24" cy="24" r="20"></circle>
+              </svg>
+              <span></span>
+            </div>
+          </div>
+        
+    <div id="op">
+        <p style="color: aliceblue;">"I had a fantastic experience with my astrology reading. <br>The insights provided were incredibly accurate and helped me gain a <br>
+           deeper understanding of my strengths and challenges. <br>The astrologer was both knowledgeable <br> and compassionate, making the session both enlightening and comforting.<br> Highly recommend!"</p>
+           
+         
+
+          <div>
+            <p style="color: aliceblue;">"The tarot reading I received was amazing! <br>The reader was incredibly intuitive and provided guidance that was not only accurate <br> but also deeply resonated with my current situation.<br> The experience was both eye-opening and reassuring. <br> I feel much clearer about the path ahead. <br>Thank you!""</p>
+                </div>
+           
+
+<p style="color: aliceblue;">
+*Name: Priya Sharma*  
+*Service: Vedic Astrology Reading*  
+
+"I had an incredible experience with the Vedic astrology reading. The insights provided were deeply enlightening and aligned perfectly with my life's journey. The astrologer’s knowledge of ancient Vedic texts and their ability to interpret complex planetary positions was truly impressive. The guidance I received not only helped me understand my past and present but also offered valuable advice for my future. Highly recommend this service to anyone seeking clarity and direction in their life."</p>
+<p style="color: aliceblue;">
+*Name: Rajesh Patel*  
+*Service: Vedic Astrology Consultation*  
+
+"The Vedic astrology consultation exceeded my expectations. The astrologer took the time to explain the nuances of my birth chart and how planetary alignments influence my life. I was particularly impressed by their thoroughness and attention to detail. The reading was both insightful and practical, offering specific recommendations that I could apply to improve my personal and professional life. It was a rewarding experience that I will cherish."
+</p>
+<p style="color: aliceblue;"> 
+*Name: Ananya Singh*  
+*Service: Tarot Card Reading*  
+
+"My tarot card reading was an eye-opener. The reader's intuitive skills and ability to connect with my energy were remarkable. The session provided me with a deeper understanding of my current situation and the choices ahead. The reader’s compassionate approach and clear explanations made the entire experience very comfortable. I felt a sense of peace and empowerment after the reading. It was a truly transformative experience."
+</p>
+<p  style="color: aliceblue;">
+*Name: Aakash Mehta*  
+*Service: Numerology Analysis*  
+
+"The numerology analysis was exceptional. The numerologist's ability to decode the significance of numbers in my life was fascinating. The detailed report provided valuable insights into my personality, strengths, and areas for growth. The practical advice based on numerological calculations was incredibly helpful. I felt more aligned with my true self and better equipped to make informed decisions. I would definitely recommend this service to others seeking a deeper understanding of themselves."
+</p>
+
+</div>
+</div>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  const progressCircle = document.querySelector(".autoplay-progress svg");
+  const progressContent = document.querySelector(".autoplay-progress span");
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev"
+    },
+    on: {
+      autoplayTimeLeft(s, time, progress) {
+        progressCircle.style.setProperty("--progress", 1 - progress);
+        progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+      }
+    }
+  });
+</script>
+</body>
+</html>
